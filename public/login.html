@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./js/chatRoom.js"></script>
+    <script src="./js/cookieService.js"></script>
+    <script src="./js/userValidator.js"></script>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+
+    <div class="container center">
+        <form action="javascript:login(0)" method="post">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" name="password" required>
+            <button type="submit">Login</button>
+    </div>
+</body>
+
+</html>

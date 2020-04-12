@@ -1,0 +1,8 @@
+{
+    "logger": {
+        "level": "info",
+        "logInDatabase": true,
+        "logInFile": true,
+        "logOnConsole": true
+    }
+}
