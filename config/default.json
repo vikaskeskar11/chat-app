@@ -1,0 +1,16 @@
+{
+    "logger": {
+        "level": "info",
+        "logInDatabase": true,
+        "logInFile": false,
+        "logOnConsole": false
+    },
+    "db": {
+        "host": "localhost",
+        "port": 27017,
+        "user": "username",
+        "pass": "password",
+        "name": "chatApp",
+        "logs": "logs"
+    }
+}

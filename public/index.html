@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Chat App</title>
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="./js/chatRoom.js"></script>
+  <script type="text/javascript" src="./js/cookieService.js"></script>
+  <script type="text/javascript" src="./js/userValidator.js"></script>
+  <script type="text/javascript" src="./js/message.js"></script>
+
+  <link href="./styles.css" rel="stylesheet">
+  <script>
+    const token = getCookie('token')
+    if (token) {
+      socket.emit('new user', token)
+      // TODO: Validate token
+    } else {
+      window.location.href = 'login.html'
+    }
+  </script>
+</head>
+
+<body>
+  <ul id="messages"></ul>
+  <p id="typing-event"></p>
+  <div class="center">
+    <form action="javascript:sendMessage()">
+      <input id="msg" autocomplete="off" />
+      <button id="sendMessage">Send</button>
+    </form>
+  </div>
+</body>
+
+</html>
+<script>
+  getMessages();
+</script>
