@@ -7,7 +7,7 @@
     "debug:start": "nodemon --inspect=0.0.0.0:9229 ./bin/www"
   },
   "dependencies": {
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "config": "^3.3.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
